@@ -44,12 +44,12 @@
 
 .form__button {
     @include themeForm;
-    background: linear-gradient(to right top, var(--color-pink), var(--color-violet));
+    background: var(--color-ligh-green);
     width: 50%;
     cursor: pointer;
 }
 
 .form__button:hover {
     transform: scale(.95);
-    background: linear-gradient(to left bottom, var(--color-pink), var(--color-violet));
+    background: var(--color-very-dark-gray);
 }
