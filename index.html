@@ -5,14 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game</title>
+    <link rel="stylesheet" href="./style/css/style.css">
 </head>
 <body>
-    <header class="header">
-        <input class="header__input" type="text" placeholder="Amount of questions:">
-    </header>
-    <main class="main">
-        <input class="main__input" type="text" placeholder="Write answer:">
-    </main>
+    <div class="content-wrapper">
+        <header class="header">
+            <h1 class="header__heading">Quiz</h1>
+            <input class="header__input input" type="number" placeholder="Amount of questions:">
+        </header>
+        <main class="main">
+            <div class="score">
+                <p class="score__win">0</p>
+                <p>of</p>
+                <p class="score__amount">0</p>
+            </div>
+            <p class="main__question">Question</p>
+            <form class="main__form" action="#">
+                <input class="main__input input" type="text" placeholder="Write answer:" required>
+                <button class="form__button">Check</button>
+            </form>
+        </main>
+    </div>
 </body>
 </html>
 <script src="./js/script.js"></script>
